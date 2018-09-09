@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SABTPD</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <!-- <h1>Semi Autonomous Build Tool For PLM Developers</h1> -->
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    We are using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+
+	<div id="user_Inputs">
+		<form>
+		<br>
+			<table id="user_Inputs_Table" style="width:100%">
+			  <tr class="tr_user_Inputs">
+				<td>3DExp / Enovia Server Path: </td>
+				<td><input type="text" name="path_Server" id="path_Server" class="user_Inputs"></td>
+			  </tr>
+			  <tr>
+				<td>Spinner Path: </td>
+				<td><input type="text" name="path_Spinner" id="path_Spinner" class="user_Inputs"></td>
+			  </tr>
+			  <tr>
+				<td>Web Path: </td>
+				<td><input type="text" name="path_Web" id="path_Web" class="user_Inputs"></td>
+			  </tr>
+			  <tr>
+				<td>Tomcat_CAS_Path: </td>
+				<td><input type="text" name="path_App_Server_CAS" id="path_App_Server_CAS" class="user_Inputs"></td>
+			  </tr>
+			  <tr>
+				<td>CAS Webapp Name: </td>
+				<td><input type="text" name="webApp_CAS" id="webApp_CAS" class="user_Inputs"></td>
+			  </tr>
+			  <tr>
+				<td>Tomcat_noCAS_Path: </td>
+				<td><input type="text" name="path_App_Server_noCAS" id="path_App_Server_noCAS" class="user_Inputs"></td>
+			  </tr>
+			  <tr>
+				<td>No CAS Webapp Name: </td>
+				<td><input type="text" name="webApp_noCAS" id="webApp_noCAS" class="user_Inputs"></td>
+			  </tr>
+			  <tr>
+				<td><input type="button" id="Edit_UserPref" value="Edit" disabled onload="setProperty()"/></td>
+				<td><input type="button" id="Save_UserPref" value="Save"/></td>
+			  </tr>
+			</table>
+		<br>
+		</form>
+	</div>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+      require('./preProcessChecks.js')
+    </script>
+  </body>
+</html>
