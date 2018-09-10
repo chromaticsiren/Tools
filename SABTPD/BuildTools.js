@@ -100,14 +100,13 @@ function initiateBuild(path) {
 
 
 var child = require('child_process').execFile;
-var executablePath = "Test_MQL.bat";
+var executablePath = ".\\I-O\\Test_MQL.bat";
 
 child(executablePath, function(err, data) {
     if(err){
        console.error(err);
        return;
     }
-
     console.log(data.toString());
 });
 

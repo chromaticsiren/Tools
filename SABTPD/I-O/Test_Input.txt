@@ -1,0 +1,13 @@
+verb on;
+
+set context user creator;
+
+tcl;
+
+cd {D:\TECHM\SP351496\Personal_GitHub_WrkSpc\Tools\SABTPD}
+
+pwd
+
+exit
+
+print person 502244529;
