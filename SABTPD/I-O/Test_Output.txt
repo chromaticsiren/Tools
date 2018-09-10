@@ -1,7 +1,0 @@
-
-Matrix Query Language Interface, Version 3DEXPERIENCE R2018x HotFix 2 (64 bits)
-
-Copyright (c) 1993-2017 Dassault Systemes.
-All rights reserved.
-Context successfully set
-D:/TECHM/SP351496/Personal_GitHub_WrkSpc/Tools/SABTPD

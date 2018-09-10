@@ -1,3 +1,0 @@
-System Error: #1900010: Occurred on line number '9' in '-stderr:Test_Error.txt'
-Error: #1900068: print person failed
-System Error: #1500178: person '502244529' does not exist
