@@ -9,11 +9,6 @@ var  save_btn = document.getElementById("Save_UserPref");
 var user_Inputs = document.getElementsByClassName('user_Inputs');
 var icon_cell_g = document.getElementsByClassName("notify_Icon");
 
-// function setProperty()
-// {
-//
-// }
-
 function enableInput() {
 
   save_btn.disabled=false;
@@ -117,8 +112,11 @@ function validateUserInputs(row, elem, value) {
       var sCheck = fExists(vCheck);
       if(sCheck == "True")
       {
+        store.set('path_Server', vCheck);
         addPositive(row, img_Pass);
+
       } else {
+        store.set('path_Server', "");
         addError(row, img_Fail);
       }
     } else if (elem == "path_Spinner") {
@@ -133,6 +131,7 @@ function validateUserInputs(row, elem, value) {
 
         if (bCheck == "True" || oCheck == "True" || rCheck == "True" || syCheck == "True" || scCheck == "True")
         {
+          store.set('path_Spinner', value);
           addPositive(row, img_Pass);
         } else {
           addError(row, img_Fail);
@@ -170,5 +169,16 @@ var addError = function(row, img_Fail)
   row.children[2].append(img_Fail);
 }
 
+
 document.querySelector('#Save_UserPref').addEventListener('click', addRowHandlers)
 document.querySelector('#Edit_UserPref').addEventListener('click', enableInput)
+
+
+const cacheTools = require('./cacheTools');
+
+// First instantiate the class
+const store = new cacheTools({
+  // We'll call our data file 'user-preferences'
+  configName: 'user-preferences',
+  defaults: {}
+});

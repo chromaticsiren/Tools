@@ -53,10 +53,31 @@
 		</form>
 	</div>
 
+  <div id="build_Options_div">
+    <form>
+    <br>
+    <table id="build_Options_Table" style="width:100%">
+      <tr class="tr_user_Inputs">
+        <td><input type="radio" id="Spinner" name="buildType" value="Spinner"> Spinner </td>
+        <td><input type="radio" id="Web" name="buildType" value="Web"> Web </td>
+        <td><input type="radio" id="Both" name="buildType" value="Both"> Both </td>
+        <td><input type="button" id="Build" value="Build"/></td>
+      </tr>
+      <!-- <tr>
+        <td><input type="button" id="Save_UserPref" value="Build"/></td>
+      </tr> -->
+    </table>
+  </div>
+
+  <div id="build_Progress_div">
+
+  </div>
+
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
       require('./preProcessChecks.js')
+      require('./BuildTools.js')
     </script>
   </body>
 </html>
