@@ -1,0 +1,13 @@
+verb on;
+
+set context user creator;
+
+tcl;
+
+cd {}
+
+pwd
+
+exit
+
+run PRE_Scripts.mql;

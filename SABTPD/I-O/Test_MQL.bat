@@ -1,1 +1,1 @@
-START D:\GEGDC\SP351496\Apps\3DExp18x\3DSpace\win_b64\code\bin\mql.exe -stdin:Test_Input.txt -stdout:Test_Output.txt -stderr:Test_Error.txt
+START D:\GEGDC\SP351496\Apps\3DExp18x\3DSpace\win_b64\code\bin\mql.exe  -t -stdin:"D:\TECHM\SP351496\Personal_GitHub_WrkSpc\Tools\SABTPD\I-O\Test_Input.txt" -stdout:"D:\TECHM\SP351496\Personal_GitHub_WrkSpc\Tools\SABTPD\I-O\Test_Output.txt" -stderr:"D:\TECHM\SP351496\Personal_GitHub_WrkSpc\Tools\SABTPD\I-O\Test_Error.txt"

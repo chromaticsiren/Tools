@@ -4,10 +4,10 @@ set context user creator;
 
 tcl;
 
-cd {D:\TECHM\SP351496\Personal_GitHub_WrkSpc\Tools\SABTPD}
+cd {D:\GEGDC\SP351496\GTCC\Sprints\Sprint 3\US 24283 - Create UG Model TEAM Template\Spinner\Scripts}
 
 pwd
 
 exit
 
-print person 502244529;
+run PRE_Scripts.mql;

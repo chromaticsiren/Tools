@@ -14,13 +14,13 @@ function enableInput() {
   save_btn.disabled=false;
   edit_btn.disabled=true;
 
-  for (j = 0; j < user_Inputs.length; j++)
+  for (let j = 0; j < user_Inputs.length; j++)
   {
       var user_Inputs_1 = user_Inputs[j];
       user_Inputs_1.disabled=false;
   }
 
-  for(a=0; a<icon_cell_g.length; a++)
+  for(let a=0; a<icon_cell_g.length; a++)
   {
       var icon_td = icon_cell_g[a];
       icon_td.children[0].remove();
@@ -34,7 +34,7 @@ function addRowHandlers() {
   save_btn.disabled = true;
   edit_btn.disabled = false;
 
-  for (i = 0; i < rows.length-1; i++)
+  for (let i = 0; i < rows.length-1; i++)
   {
       var currentRow = table.rows[i];
       user_Inputs[i].disabled=true;

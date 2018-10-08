@@ -1,0 +1,13 @@
+verb on;
+
+set context user creator;
+
+tcl;
+
+cd {}
+
+pwd
+
+exit
+
+exec prog emxSpinnerAgent.tcl;

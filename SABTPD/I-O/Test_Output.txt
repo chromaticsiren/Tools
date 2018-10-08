@@ -1,0 +1,8 @@
+Context successfully set
+D:/GEGDC/SP351496/GTCC/Sprints/Sprint 3/US 24283 - Create UG Model TEAM Template/Spinner/Scripts
+#######################################################
+Start of Spinner settings modification for Unified typing schema
+#######################################################
+#######################################################
+End of Spinner settings modification for Unified typing schema
+#######################################################
